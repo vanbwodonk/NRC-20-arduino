@@ -25,6 +25,10 @@ public:
   uint8_t getRY();
   uint8_t getRX();
   uint8_t getSW();
+  uint8_t getL1();
+  uint8_t getL2();
+  uint8_t getR1();
+  uint8_t getR2();
 };
 
 #endif

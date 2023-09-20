@@ -52,3 +52,31 @@ uint8_t NRC20::getLX() { return LX; }
 uint8_t NRC20::getRY() { return RY; }
 uint8_t NRC20::getRX() { return RX; }
 uint8_t NRC20::getSW() { return SW; }
+
+uint8_t NRC20::getL1() {
+  if (SW & 0b00000001)
+    return 1;
+  else
+    return 0;
+}
+
+uint8_t NRC20::getL2() {
+  if (SW & 0b00000010)
+    return 1;
+  else
+    return 0;
+}
+
+uint8_t NRC20::getR1() {
+  if (SW & 0b00000100)
+    return 1;
+  else
+    return 0;
+}
+
+uint8_t NRC20::getR2() {
+  if (SW & 0b00001000)
+    return 1;
+  else
+    return 0;
+}

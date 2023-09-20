@@ -21,8 +21,14 @@ void loop() {
     Serial.println(nrc20.getRY());
     Serial.print("RX = ");
     Serial.println(nrc20.getRX());
-    Serial.print("SW = ");
-    Serial.println(nrc20.getSW());
+    Serial.print("L1 = ");
+    Serial.println(nrc20.getL1());
+    Serial.print("L2 = ");
+    Serial.println(nrc20.getL2());
+    Serial.print("R1 = ");
+    Serial.println(nrc20.getR1());
+    Serial.print("R2 = ");
+    Serial.println(nrc20.getR2());
   } else {
     // Serial.println("nope");
   }
